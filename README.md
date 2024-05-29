@@ -1,1 +1,1 @@
-# Magic-Number
+# Magic_Number
