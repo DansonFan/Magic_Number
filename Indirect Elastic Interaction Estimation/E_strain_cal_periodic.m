@@ -95,7 +95,7 @@ for i = 1:num_C_atoms
 end
 
 % Calculate E_elastic per CO
-E_elastic = 4.67 * pi * sum(rij_array .^ -3) / num_C_atoms;
+E_elastic = 4.67 * pi/3 * sum(rij_array .^ -3) / num_C_atoms;
 
 disp(['E_elastic per CO = ', num2str(E_elastic)]);
 
