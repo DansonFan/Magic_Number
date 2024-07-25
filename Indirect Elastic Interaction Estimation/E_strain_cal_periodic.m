@@ -17,8 +17,8 @@ fclose(fileID);
 
 % Extract the data
 element_names = atom_data{1};
-x_coordinates = atom_data{2} * 1.8897259886; % 单位转换
-y_coordinates = atom_data{3} * 1.8897259886; % 单位转换
+x_coordinates = atom_data{2} * 1.8897259886; % Unit convertion (from Å to a.u.)
+y_coordinates = atom_data{3} * 1.8897259886; % Unit conversion (from Å to a.u.)
 
 % Extract x and y coordinates of rows where the element is C
 C_indices = strcmp(element_names, 'C');
