@@ -1,5 +1,6 @@
 # Magic_Number
 Here's a summary of this GitHub repository for the manuscript entitled "Anomalous Saturation of CO Adsorption at 26% on Cu(111)."
+
 -- Dingxin Fan 6:02 PM 07/26/2024
 
 ## CO Identification
