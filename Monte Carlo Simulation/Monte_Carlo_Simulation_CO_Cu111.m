@@ -1,3 +1,5 @@
+% -- By Dingxin Fan, July 2024
+
 clc, clear
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Simulate the distribution of CO on the M(111) surface.
