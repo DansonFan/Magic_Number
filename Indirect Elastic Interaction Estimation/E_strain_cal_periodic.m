@@ -3,7 +3,7 @@
 clc, clear
 
 % Open the file
-%fileID = fopen('path to your .xyz file','r');
+fileID = fopen('path to your .xyz file','r');
 
 % Skip the first two lines
 for i = 1:2
