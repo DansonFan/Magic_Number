@@ -1,1 +1,3 @@
-Hi
+Excel worksheets used to compute the cumulative probability (CP) as functions of θ. 
+
+The categorization and organization of experimental and simulated data within the worksheets were done by Ms. Qiaoqiao Chi. All other calculations and fittings were performed by Dingxin Fan.
