@@ -1,7 +1,7 @@
 # Magic_Number
 Here's a summary of this GitHub repository for the manuscript entitled "Anomalous Saturation of CO Adsorption at 26% on Cu(111)":
 
-# CO Identification
+## CO Identification
 This directory contains the code used for CO identification, including a detailed example illustrating the procedure for image calibration and CO coverage calculation.
 
 # Distribution Analysis
