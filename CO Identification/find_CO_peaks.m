@@ -1,3 +1,5 @@
+% -- Dingxin Fan 2023
+
 clc, clear
 I = imread("path");
 I1=rgb2gray(I);
