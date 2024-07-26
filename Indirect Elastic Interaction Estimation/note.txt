@@ -1,1 +1,17 @@
-Code for calculating the N-body indirect Elastic Interaction.
+The MATLAB code, E_strain_cal_periodic.m, is designed to compute the indirect elastic interaction for the CO/Cu(111) system. To analyze other N-body systems, you will need to modify the parameters accordingly (in atomic units).
+
+The code requires an input .xyz file that contains the atomic coordinates (in Å, the code will automatically converts the unit from Å to a.u.) of the system. The file named 39CO_144Cu_exp.xyz is an example input file for this code.
+
+How to run:
+Download both files, copy the path of the input file (right click - 'copy as path'), and paste it into the following line of the MATLAB code:
+fileID = fopen('path to your .xyz file','r');
+
+For instance, the modified line should appear as follows:
+
+fileID = fopen('D:\Dingxin\Princeton\Magic_Number\E_strain\39CO_144Cu_exp.xyz','r');
+
+Running the code will output the number of CO molecules, the inelastic energy per CO (in eV), as well as a virtual representation of the system you are working with.
+
+By increasing the number of unit cells in the x and y directions, num_cells_x and num_cells_y, respectively, you can obtain more accurate estimations (always test the convergence). However, this will result in slower calculations.
+
+The red dashed lines within the central unit cell indicate whether there is an interaction between two surface molecules. For simplicity, we have set the threshold to 10 a.u., meaning that if the distance between two molecules exceeds 10 a.u., their interaction is not plotted (considered negligible). However, based on our experimental results, this threshold should approximately equal to 100 a.u., which corresponds to the radius of the long-range interaction, 5.3 nm.
