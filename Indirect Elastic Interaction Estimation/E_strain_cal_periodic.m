@@ -19,6 +19,7 @@ sigma = 0.34; % Poisson ratio
 dilatation_2D = 0.1; %2D dilatation
 xi = 1/3; % scaling factor
 del_r = 3.51; % adsorption height
+
 Hartree_to_eV = 27.211407953; %Convert Hartree to eV
 
 % Close the file
