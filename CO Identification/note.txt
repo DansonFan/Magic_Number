@@ -1,1 +1,29 @@
-The CO Identification code and an example.
+% -- Dingxin Fan 2023
+
+The CO identification code (find_CO_peaks.m) primarily utilizes the function FastPeakFind.m developed by Dr. Adi Natan from Stanford University.
+
+How to Run:
+Download the following files: find_CO_peaks.m, FastPeakFind.m, and the example figure named Fig_example_original.png.
+
+Copy the path of your input image file and paste it into the following line of the find_CO_peaks.m file:
+
+I = imread("path");
+
+For example, the line should appear as:
+
+I = imread("D:\Dingxin\Princeton\Magic_Number\CO_identification\Fig_example_original.png");
+
+Users may adjust the parameters in the following line of the code as needed:
+p = FastPeakFind(I, 55, fspecial("disk", 5), 3, 1);
+Details of these parameters are provided in the FastPeakFind.m function file.
+
+Note that the efficiency of the code depends on the resolution of the image. The Fig_example_processed.png illustrates the procedure for calculating the number of CO molecules, the number of surface Cu atoms, and the corresponding coverage using a large-scale STM image.
+
+If the code is executed as provided, it will identify 1003 CO molecules. However, due to the insufficient resolution of this selected image, manual correction is required to address double-counted COs and to account for missing COs. In this example, the code double-counted 77 COs and missed 17 COs.
+
+Another important consideration is that many SPM experimental images may exhibit distortion along either the x or y direction, likely due to thermal drift. To ensure accurate counting of surface Cu atoms, experimental images were manually calibrated in the x-y dimensions.
+
+As shown in Fig_example_process.png, the image calibration procedure is as follows:
+After the CO identification process, we measure the length of known-length segments from different directions (need to be roughly perpendicular to each other) in pixels. For instance, Line1/2/3 represent distances between COs separated by 5/10/5 sites, respectively. We compute the number of pixels that represent the CO-CO sepration distance (4.4 Å) by calculating their total length and divide by 5/10/5, respectively. Calibration is considered successful if the calculated variance is less than ~ 0.02.
+
+This procedure was applied to every single experimental image.
