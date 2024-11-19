@@ -1,7 +1,7 @@
 # Magic_Number
 Here's a summary of this GitHub repository for the manuscript entitled "Anomalous Saturation of CO Adsorption at 26% on Cu(111) Governed by Long-range Collective Quantum Interactions."
 
--- Created by Dingxin Fan @ 6:02 PM 07/26/2024
+-- Created by Dingxin Fan @ 6:02 PM 07/26/2024;
 -- Updated by Dingxin Fan @ 3:58 PM 11/19/2024
 
 ## CO Identification
